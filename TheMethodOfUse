@@ -19,3 +19,27 @@ this.c( 'res',Object,[
          ['list',['AA','BB','CC]],
          {n:'info',l:['height','like']} 
 ] )
+
+the most
+ let list = {
+         ee: 0,
+         cc: "",
+       ww: [
+         { name: "", bb: '44', nn: [{ aa: 0 }, { aa: '' }] },
+         { name: "ss", bb: '' },
+         ],
+       qq: {
+          oo: 0,
+          ff: {
+              kk: ''
+              },
+         ll: [{ ww: 99, kk: '' }, { ww: 99, kk: 'ss' }]
+          }
+       }                       
+
+        this.c('2342', list, [
+            'ee',
+            'cc',
+            ['ww', ['name', 'bb', ['nn', ['aa']]]],
+            { n: 'qq', l: ['oo', { n: 'ff', l: ['kk'] }, ['ll', ['ww', 'kk']]] }
+        ])
