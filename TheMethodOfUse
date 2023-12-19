@@ -1,0 +1,21 @@
+If you want to make sure a Object or Array has all the value 
+You can use this function 
+
+the example
+let Object={
+        name:"jack",
+        year:"23",
+        list:[{ AA:"234234",BB:"1213123",CC:"56756756" },{ AA:"234234",BB:"1213123",CC:"56756756" }],
+        info:{
+        height:178,
+        like:"basketball"
+        }
+}
+
+you can 
+this.c( 'res',Object,[
+         'name',
+         'year',
+         ['list',['AA','BB','CC]],
+         {n:'info',l:['height','like']} 
+] )
