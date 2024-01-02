@@ -1,3 +1,11 @@
+// if you want to make sure a Object or Array which is Trusted
+// you can use this function. Its useful for front
+// the first value is the res which is back from after
+// the seond value is the variable that you want to check
+// the third value is the rules of check ( you can read TheMethodOfUse to learn how to use it )
+
+// thats make you Pleasantly surprised！
+
 c(way, check, checkList) {
             let back = {
                 path: '',
