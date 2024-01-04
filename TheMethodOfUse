@@ -2,23 +2,30 @@ If you want to make sure a Object or Array has all the value
 You can use this function 
 
 the example
+var a variable （a array or a object）
+and you want to check Whether it has all the value that you want
+
 let Object={
         name:"jack",
         year:"23",
         list:[{ AA:"234234",BB:"1213123",CC:"56756756" },{ AA:"234234",BB:"1213123",CC:"56756756" }],
         info:{
-        height:178,
-        like:"basketball"
+           height:178,
+           like:"basketball"
         }
 }
 
-you can 
+you can import the c.js and use it like
+
 this.c( 'res',Object,[
          'name',
          'year',
          ['list',['AA','BB','CC]],
          {n:'info',l:['height','like']} 
 ] )
+
+then you will see a Object in Console which contain the information about the key which without value
+if you want check the array or object which from  back end
 
 the most
  let list = {
@@ -43,3 +50,6 @@ the most
             ['ww', ['name', 'bb', ['nn', ['aa']]]],
             { n: 'qq', l: ['oo', { n: 'ff', l: ['kk'] }, ['ll', ['ww', 'kk']]] }
         ])
+
+
+you may want 
