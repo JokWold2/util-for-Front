@@ -6,7 +6,26 @@
 
 // thats make you Pleasantly surprised！
 import { ref } from "vue"
-
+// Mixin类（面向对象方式）- 第62-741行
+// c函数（函数式方式）- 第744-1234行
+// '校验'模式：验证接口返回的数据结构是否符合预期
+// '测试'模式：根据规则生成模拟测试数据
+// ✅ 支持对象和数组的深层嵌套校验
+// ✅ 自动生成测试数据（字符串、数字、图片URL、时间等）
+// ✅ 错误收集和反馈机制（存储到localStorage）
+// ✅ 可配置数据数量、严格模式等
+// ✅ 支持随机值和枚举值
+// config数组支持的参数：
+// - {} 或 [] : 指定返回数据格式
+// - 数字 : 指定生成数据的数量（默认5）
+// - true/false : 控制MIXINCHECK开关
+// - '测试' : 测试模式
+// - '校验' : 校验模式
+// - 'only' : only模式（影响数据生成方式）
+// 校验模式
+// c(response, response.data, ['校验'], ['name', 'age=()'])
+// // 测试模式 - 生成5条数据
+// c('test', null, ['测试', [], 5], ['name', 'age=()', 'avatar=img'])
 interface ListItem {
 	name: string,
 	type: string
